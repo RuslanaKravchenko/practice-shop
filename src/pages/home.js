@@ -1,4 +1,4 @@
-import refs from "../refs/refs.js";
+import refs from '../refs/refs';
 
 export const homePage = () => {
   refs.content.innerHTML = `

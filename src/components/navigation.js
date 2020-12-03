@@ -1,5 +1,5 @@
-import refs from "../refs/refs.js";
-import pages from "../pages/index.js";
+import refs from "../refs/refs";
+import pages from "../pages/index";
 
 export default () => {
   const activeLink = document.querySelector('[data-navlink="Home"]');

@@ -1,10 +1,10 @@
-import refs from "../refs/refs.js";
-import { data } from "../data/data.js";
+import refs from '../refs/refs';
+import { data } from '../data/data';
 
 export const productsPage = () => {
   // console.log(data.products);
 
-  const createMarkup = (dataArray) => {
+  const createMarkup = dataArray => {
     return dataArray.reduce((acc, product) => {
       acc += `
       <li class="productListItem">
@@ -13,8 +13,10 @@ export const productsPage = () => {
       </li>
       `;
       return acc;
-    }, "");
+    }, '');
   };
 
-  refs.content.innerHTML = `<ul class="productList">${createMarkup(data.products)}</ul>`;
+  refs.content.innerHTML = `<ul class="productList">${createMarkup(
+    data.products,
+  )}</ul>`;
 };
